@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Conseils | SocialJeunes</title>
+    <style>
+        /* ================================
+   PAGE CONSEILS
+================================ */
+
+.advice-title {
+    padding: 100px 7%;
+    text-align: center;
+    background-color: #eef8f3;
+}
+
+.advice-title p:first-child {
+    color: #159957;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.advice-title h2 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.advice-title p:last-child {
+    max-width: 800px;
+    margin: auto;
+    color: #5f6b76;
+    font-size: 17px;
+}
+
+
+/* ================================
+   CONTENEUR CONSEILS
+================================ */
+
+.advice-container {
+    padding: 100px 7%;
+    background-color: #f5f7fa;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+/* ================================
+   CARTE CONSEIL
+================================ */
+
+.advice-card {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 25px;
+
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+
+    transition: 0.3s;
+}
+
+.advice-card:hover {
+    transform: translateY(-4px);
+}
+
+
+/* NUMÉRO */
+
+.advice-number {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background-color: #159957;
+    color: white;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* TITRE */
+
+.advice-card h3 {
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+
+/* TEXTE */
+
+.advice-card p {
+    color: #687581;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+
+/* SOUS-TITRE */
+
+.advice-card h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #17202a;
+}
+
+
+/* LISTE */
+
+.advice-card ul {
+    padding-left: 20px;
+}
+
+.advice-card li {
+    margin-bottom: 8px;
+    color: #5f6b76;
+}
+
+
+/* ================================
+   PLAN D'ACTION
+================================ */
+
+.action-plan {
+    padding: 100px 7%;
+    background-color: #17202a;
+    color: white;
+}
+
+.action-content {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.action-content > p:first-child {
+    color: #4da3ff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.action-content h2 {
+    font-size: 40px;
+    margin: 10px 0 20px;
+}
+
+.action-content > p {
+    color: #c4ccd4;
+    font-size: 17px;
+}
+
+
+/* ================================
+   LISTE DU DÉFI
+================================ */
+
+.action-list {
+    margin-top: 40px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+
+    text-align: left;
+}
+
+.action-list div {
+    background-color: #202c37;
+
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+.action-list strong {
+    display: block;
+
+    color: #4da3ff;
+
+    margin-bottom: 5px;
+}
+
+.action-list span {
+    color: #d8dee4;
+}
+
+
+/* ================================
+   CTA
+================================ */
+
+.advice-cta {
+    padding: 90px 7%;
+
+    text-align: center;
+
+    background-color: white;
+}
+
+.advice-cta h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.advice-cta p {
+    color: #687581;
+
+    margin-bottom: 30px;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 700px) {
+
+    .advice-title h2 {
+        font-size: 36px;
+    }
+
+    .advice-card {
+        grid-template-columns: 1fr;
+    }
+
+    .advice-number {
+        width: 55px;
+        height: 55px;
+    }
+
+    .action-content h2 {
+        font-size: 30px;
+    }
+
+    .action-list {
+        grid-template-columns: 1fr;
+    }
+
+}
+    </style>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+
+            <h1>
+                Social<span>Jeunes</span>
+            </h1>
+
+        </div>
+
+
+        <nav>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">Accueil</a>
+                </li>
+
+                <li>
+                    <a href="avantages.html">Avantages</a>
+                </li>
+
+                <li>
+                    <a href="dangers.html">Dangers</a>
+                </li>
+
+                <li>
+                    <a href="conseils.html">Conseils</a>
+                </li>
+
+                <li>
+                    <a href="quiz.html">Quiz</a>
+                </li>
+
+                <li>
+                    <a href="ressources.html">Ressources</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= CONTENU ================= -->
+
+    <main>
+
+
+        <!-- INTRODUCTION -->
+
+        <section class="advice-title">
+
+            <p>
+                MIEUX UTILISER LES RÉSEAUX SOCIAUX
+            </p>
+
+            <h2>
+                Des conseils qui peuvent vraiment aider
+            </h2>
+
+            <p>
+                Les réseaux sociaux font partie de notre quotidien.
+                L'objectif n'est pas de les supprimer, mais d'apprendre
+                à les utiliser sans qu'ils prennent le contrôle de notre
+                temps, de nos informations personnelles ou de notre bien-être.
+            </p>
+
+        </section>
+
+
+        <!-- ================= CONSEILS ================= -->
+
+        <section class="advice-container">
+
+
+            <!-- CONSEIL 1 -->
+
+            <article class="advice-card">
+
+                <div class="advice-number">
+                    01
+                </div>
+
+                <div>
+
+                    <h3>
+                        Apprends à gérer ton temps
+                    </h3>
+
+                    <p>
+                        Les vidéos courtes et les notifications sont conçues
+                        pour attirer notre attention. On peut parfois ouvrir
+                        une application pour quelques minutes et y rester
+                        beaucoup plus longtemps.
+                    </p>
+
+                    <h4>
+                        Ce que tu peux faire :
+                    </h4>
+
+                    <ul>
+
+                        <li>
+                            Fixe une durée quotidienne raisonnable.
+                        </li>
+
+                        <li>
+                            Désactive les notifications inutiles.
+                        </li>
+
+                        <li>
+                            Évite de consulter ton téléphone pendant
+                            tes études ou tes devoirs.
+                        </li>
+
+                        <li>
+                            Pose ton téléphone loin de ton lit lorsque
+                            tu vas dormir.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </article>
+
+
+            <!-- CONSEIL 2 -->
+
+            <article class="advice-card">
+
+                <div class="advice-number">
+                    02
+                </div>
+
+                <div>
+
+                    <h3>
+                        Protège tes informations personnelles
+                    </h3>
+
+                    <p>
+                        Tout ce que tu publies peut potentiellement être
+                        enregistré, partagé ou capturé. Il est donc
+                        important de réfléchir avant de publier.
+                    </p>
+
+                    <h4>
+                        Évite de publier publiquement :
+                    </h4>
+
+                    <ul>
+
+                        <li>
+                            Ton adresse personnelle.
+                        </li>
+
+                        <li>
+                            Ton numéro de téléphone.
+                        </li>
+
+                        <li>
+                            Tes mots de passe.
+                        </li>
+
+                        <li>
+                            Des documents contenant des informations
+                            personnelles.
+                        </li>
+
+                        <li>
+                            Des informations permettant de savoir
+                            précisément où tu te trouves.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </article>
+
+
+            <!-- CONSEIL 3 -->
+
+            <article class="advice-card">
+
+                <div class="advice-number">
+                    03
+                </div>
+
+                <div>
+
+                    <h3>
+                        Utilise des mots de passe solides
+                    </h3>
+
+                    <p>
+                        Ton compte contient souvent des photos,
+                        conversations et informations personnelles.
+                        Un mot de passe faible peut faciliter le piratage
+                        du compte.
+                    </p>
+
+                    <h4>
+                        Les bonnes pratiques :
+                    </h4>
+
+                    <ul>
+
+                        <li>
+                            Utilise un mot de passe long et difficile
+                            à deviner.
+                        </li>
+
+                        <li>
+                            Évite d'utiliser ton prénom ou ta date
+                            de naissance.
+                        </li>
+
+                        <li>
+                            N'utilise pas le même mot de passe partout.
+                        </li>
+
+                        <li>
+                            Active la double authentification lorsque
+                            le service la propose.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </article>
+
+
+            <!-- CONSEIL 4 -->
+
+            <article class="advice-card">
+
+                <div class="advice-number">
+                    04
+                </div>
+
+                <div>
+
+                    <h3>
+                        Ne crois pas tout ce que tu vois
+                    </h3>
+
+                    <p>
+                        Une information très partagée n'est pas forcément
+                        vraie. Une photo peut être ancienne, une vidéo
+                        peut être sortie de son contexte et une publication
+                        peut être volontairement trompeuse.
+                    </p>
+
+                    <h4>
+                        Avant de partager une information :
+                    </h4>
+
+                    <ul>
+
+                        <li>
+                            Cherche la source originale.
+                        </li>
+
+                        <li>
+                            Vérifie la date de publication.
+                        </li>
+
+                        <li>
+                            Compare avec plusieurs sources fiables.
+                        </li>
+
+                        <li>
+                            Méfie-toi des titres très émotionnels ou
+                            sensationnels.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </article>
+
+
+            <!-- CONSEIL 5 -->
+
+            <article class="advice-card">
+
+                <div class="advice-number">
+                    05
+                </div>
+
+                <div>
+
+                    <h3>
+                        Si tu es victime de cyberharcèlement, ne reste pas seul
+                    </h3>
+
+                    <p>
+                        Les insultes, menaces, humiliations ou messages
+                        répétés peuvent être difficiles à vivre.
+                        Ce n'est pas quelque chose que tu dois gérer seul.
+                    </p>
+
+                    <h4>
+                        Que faire ?
+                    </h4>
+
+                    <ul>
+
+                        <li>
+                            Ne réponds pas aux provocations.
+                        </li>
+
+                        <li>
+                            Conserve les preuves : captures d'écran,
+                            messages ou liens.
+                        </li>
+
+                        <li>
+                            Bloque et signale le compte concerné.
+                        </li>
+
+                        <li>
+                            Parle rapidement à une personne de confiance.
+                        </li>
+
+                        <li>
+                            En cas de menace sérieuse, cherche l'aide
+                            d'un adulte responsable ou des services
+                            compétents.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </article>
+
+
+            <!-- CONSEIL 6 -->
+
+            <article class="advice-card">
+
+                <div class="advice-number">
+                    06
+                </div>
+
+                <div>
+
+                    <h3>
+                        Fais attention aux inconnus
+                    </h3>
+
+                    <p>
+                        Une personne rencontrée sur Internet n'est pas
+                        forcément celle qu'elle prétend être. Certains
+                        profils peuvent utiliser de fausses identités.
+                    </p>
+
+                    <h4>
+                        Protège-toi :
+                    </h4>
+
+                    <ul>
+
+                        <li>
+                            Ne partage pas facilement des informations
+                            privées avec une personne inconnue.
+                        </li>
+
+                        <li>
+                            Ne transfère pas d'argent à quelqu'un que
+                            tu connais uniquement en ligne.
+                        </li>
+
+                        <li>
+                            Méfie-toi des demandes urgentes ou secrètes.
+                        </li>
+
+                        <li>
+                            Si une rencontre réelle est envisagée,
+                            parle-en à un adulte de confiance et privilégie
+                            un lieu public avec des précautions adaptées.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </article>
+
+
+            <!-- CONSEIL 7 -->
+
+            <article class="advice-card">
+
+                <div class="advice-number">
+                    07
+                </div>
+
+                <div>
+
+                    <h3>
+                        Ne compare pas ta vie à celle des autres
+                    </h3>
+
+                    <p>
+                        Sur les réseaux sociaux, les personnes publient
+                        souvent leurs meilleurs moments. Cela ne représente
+                        pas nécessairement leur vie entière.
+                    </p>
+
+                    <h4>
+                        Pour garder un équilibre :
+                    </h4>
+
+                    <ul>
+
+                        <li>
+                            Rappelle-toi qu'une publication ne montre
+                            qu'une partie de la réalité.
+                        </li>
+
+                        <li>
+                            Désabonne-toi des comptes qui te font
+                            constamment te sentir mal.
+                        </li>
+
+                        <li>
+                            Consacre du temps à tes activités réelles :
+                            sport, études, famille, amis, projets.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </article>
+
+
+            <!-- CONSEIL 8 -->
+
+            <article class="advice-card">
+
+                <div class="advice-number">
+                    08
+                </div>
+
+                <div>
+
+                    <h3>
+                        Réfléchis avant de publier
+                    </h3>
+
+                    <p>
+                        Avant de publier une photo, une vidéo ou un commentaire,
+                        demande-toi si tu serais à l'aise si cette publication
+                        était vue plus tard par ta famille, un professeur
+                        ou un futur employeur.
+                    </p>
+
+                    <h4>
+                        Pose-toi trois questions :
+                    </h4>
+
+                    <ul>
+
+                        <li>
+                            Est-ce vrai ?
+                        </li>
+
+                        <li>
+                            Est-ce respectueux ?
+                        </li>
+
+                        <li>
+                            Est-ce vraiment nécessaire de le publier ?
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </article>
+
+
+        </section>
+
+
+        <!-- ================= PLAN D'ACTION ================= -->
+
+        <section class="action-plan">
+
+            <div class="action-content">
+
+                <p>
+                    TON DÉFI
+                </p>
+
+                <h2>
+                    7 jours pour reprendre le contrôle
+                </h2>
+
+                <p>
+                    Pendant une semaine, essaie de mettre en pratique
+                    quelques-unes de ces habitudes :
+                </p>
+
+
+                <div class="action-list">
+
+                    <div>
+                        <strong>Jour 1</strong>
+                        <span>Désactive les notifications inutiles.</span>
+                    </div>
+
+                    <div>
+                        <strong>Jour 2</strong>
+                        <span>Évite le téléphone pendant tes études.</span>
+                    </div>
+
+                    <div>
+                        <strong>Jour 3</strong>
+                        <span>Fais une pause d'une heure sans réseaux sociaux.</span>
+                    </div>
+
+                    <div>
+                        <strong>Jour 4</strong>
+                        <span>Vérifie une information avant de la partager.</span>
+                    </div>
+
+                    <div>
+                        <strong>Jour 5</strong>
+                        <span>Vérifie les paramètres de confidentialité de tes comptes.</span>
+                    </div>
+
+                    <div>
+                        <strong>Jour 6</strong>
+                        <span>Passe davantage de temps avec ta famille ou tes amis.</span>
+                    </div>
+
+                    <div>
+                        <strong>Jour 7</strong>
+                        <span>Observe ce qui a changé dans tes habitudes.</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CTA ================= -->
+
+        <section class="advice-cta">
+
+            <h2>
+                Maintenant, teste tes connaissances !
+            </h2>
+
+            <p>
+                As-tu vraiment compris les bonnes pratiques ?
+                Découvre-le avec notre quiz.
+            </p>
+
+            <a href="quiz.html" class="btn">
+                Commencer le quiz
+            </a>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <h2>
+                Social<span>Jeunes</span>
+            </h2>
+
+            <p>
+                Sensibiliser les jeunes pour un usage
+                responsable des réseaux sociaux.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="index.html">Accueil</a>
+
+            <a href="avantages.html">Avantages</a>
+
+            <a href="dangers.html">Dangers</a>
+
+            <a href="quiz.html">Quiz</a>
+
+            <a href="ressources.html">Ressources</a>
+
+        </div>
+
+
+        <div class="copyright">
+
+            <p>
+                © 2026 SocialJeunes — Projet éducatif
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

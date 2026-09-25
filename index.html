@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Réseaux Sociaux - Jeunesse</title>
+    <style>
+        /* ================================
+   RESET
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+    color: #17202a;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+header {
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* LOGO */
+
+.logo h1 {
+    font-size: 25px;
+    color: #17202a;
+}
+
+.logo span {
+    color: #1877f2;
+}
+
+
+/* NAVIGATION */
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #17202a;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #1877f2;
+}
+
+
+/* ================================
+   HERO
+================================ */
+
+.hero {
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 7%;
+
+    background:
+        linear-gradient(
+            rgba(10, 30, 60, 0.75),
+            rgba(10, 30, 60, 0.75)
+        ),
+        url("../images/social-media.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+.hero-content {
+    max-width: 700px;
+    color: white;
+}
+
+
+.small-title {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+
+.hero h2 {
+    font-size: 60px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero h2 span {
+    color: #4da3ff;
+}
+
+
+.hero p {
+    font-size: 18px;
+    max-width: 600px;
+    margin-bottom: 35px;
+}
+
+
+/* ================================
+   BOUTONS
+================================ */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+.btn,
+.btn-secondary {
+    display: inline-block;
+
+    padding: 14px 25px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.btn {
+    background-color: #1877f2;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #0d5dcc;
+    transform: translateY(-2px);
+}
+
+
+.btn-secondary {
+    background-color: white;
+    color: #17202a;
+}
+
+.btn-secondary:hover {
+    background-color: #e9eef5;
+    transform: translateY(-2px);
+}
+
+
+/* ================================
+   TITRES DES SECTIONS
+================================ */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.section-title p {
+    color: #1877f2;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+
+.section-title h2 {
+    font-size: 38px;
+    color: #17202a;
+}
+
+
+/* ================================
+   PRESENTATION
+================================ */
+
+.presentation {
+    padding: 100px 7%;
+    background-color: white;
+}
+
+
+.presentation-content {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+
+.presentation-content p {
+    margin-bottom: 20px;
+    color: #5f6b76;
+    font-size: 17px;
+}
+
+
+/* ================================
+   RUBRIQUES
+================================ */
+
+.rubriques {
+    padding: 100px 7%;
+}
+
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+.card {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+
+    transition: 0.3s;
+}
+
+
+.card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+.card-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+
+.card p {
+    color: #697681;
+    margin-bottom: 20px;
+}
+
+
+.card a {
+    text-decoration: none;
+    color: #1877f2;
+    font-weight: bold;
+}
+
+
+/* ================================
+   MESSAGE
+================================ */
+
+.message {
+    padding: 100px 7%;
+
+    background-color: #17202a;
+
+    text-align: center;
+
+    color: white;
+}
+
+
+.message p {
+    max-width: 800px;
+
+    margin: auto;
+
+    font-size: 30px;
+
+    font-weight: bold;
+}
+
+
+.message span {
+    display: block;
+
+    margin-top: 20px;
+
+    color: #4da3ff;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    background-color: #0d141b;
+
+    color: white;
+
+    padding: 60px 7% 25px;
+}
+
+
+.footer-content {
+    text-align: center;
+
+    max-width: 600px;
+
+    margin: auto;
+}
+
+
+.footer-content h2 {
+    font-size: 28px;
+
+    margin-bottom: 15px;
+}
+
+
+.footer-content h2 span {
+    color: #1877f2;
+}
+
+
+.footer-content p {
+    color: #aeb8c2;
+}
+
+
+.footer-links {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin: 35px 0;
+}
+
+
+.footer-links a {
+    color: #ffffff;
+
+    text-decoration: none;
+}
+
+
+.footer-links a:hover {
+    color: #4da3ff;
+}
+
+
+.copyright {
+    text-align: center;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #29333d;
+
+    color: #7d8994;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 1000px) {
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h2 {
+        font-size: 50px;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 550px;
+        padding: 60px 6%;
+    }
+
+    .hero h2 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    .message p {
+        font-size: 23px;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+    }
+}
+    </style>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+            <h1>Social<span>Jeunes</span></h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="avantages.html">Avantages</a></li>
+                <li><a href="dangers.html">Dangers</a></li>
+                <li><a href="conseils.html">Conseils</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="ressources.html">Ressources</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- ================= SECTION HERO ================= -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="small-title">
+                    ÉDUCATION • PRÉVENTION • RESPONSABILITÉ
+                </p>
+
+                <h2>
+                    Les réseaux sociaux,
+                    <span>autrement.</span>
+                </h2>
+
+                <p>
+                    Découvrez comment profiter des réseaux sociaux
+                    tout en protégeant votre vie privée, votre temps
+                    et votre bien-être.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="conseils.html" class="btn">
+                        Découvrir les conseils
+                    </a>
+
+                    <a href="quiz.html" class="btn-secondary">
+                        Faire le quiz
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PRESENTATION ================= -->
+
+        <section class="presentation">
+
+            <div class="section-title">
+
+                <p>NOTRE MISSION</p>
+
+                <h2>
+                    Comprendre pour mieux utiliser
+                </h2>
+
+            </div>
+
+            <div class="presentation-content">
+
+                <p>
+                    Les réseaux sociaux occupent une place importante
+                    dans la vie des jeunes. Ils permettent de communiquer,
+                    apprendre, partager et découvrir de nouvelles choses.
+                </p>
+
+                <p>
+                    Mais une utilisation excessive ou imprudente peut
+                    également présenter certains risques.
+                </p>
+
+                <p>
+                    Notre objectif est donc de donner aux jeunes les
+                    informations et les outils nécessaires pour adopter
+                    une utilisation consciente, équilibrée et responsable
+                    des réseaux sociaux.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= LES RUBRIQUES ================= -->
+
+        <section class="rubriques">
+
+            <div class="section-title">
+
+                <p>EXPLOREZ</p>
+
+                <h2>
+                    Que voulez-vous découvrir ?
+                </h2>
+
+            </div>
+
+
+            <div class="cards">
+
+                <!-- Carte avantages -->
+
+                <article class="card">
+
+                    <div class="card-icon">
+                        👍
+                    </div>
+
+                    <h3>
+                        Les avantages
+                    </h3>
+
+                    <p>
+                        Découvrez comment les réseaux sociaux
+                        peuvent être utiles pour apprendre,
+                        communiquer et créer.
+                    </p>
+
+                    <a href="avantages.html">
+                        En savoir plus →
+                    </a>
+
+                </article>
+
+
+                <!-- Carte dangers -->
+
+                <article class="card">
+
+                    <div class="card-icon">
+                        ⚠️
+                    </div>
+
+                    <h3>
+                        Les dangers
+                    </h3>
+
+                    <p>
+                        Apprenez à reconnaître les principaux
+                        risques auxquels les jeunes peuvent
+                        être confrontés en ligne.
+                    </p>
+
+                    <a href="dangers.html">
+                        Découvrir →
+                    </a>
+
+                </article>
+
+
+                <!-- Carte conseils -->
+
+                <article class="card">
+
+                    <div class="card-icon">
+                        💡
+                    </div>
+
+                    <h3>
+                        Les conseils
+                    </h3>
+
+                    <p>
+                        Découvrez des conseils simples pour
+                        utiliser les réseaux sociaux de manière
+                        plus responsable.
+                    </p>
+
+                    <a href="conseils.html">
+                        Voir les conseils →
+                    </a>
+
+                </article>
+
+
+                <!-- Carte quiz -->
+
+                <article class="card">
+
+                    <div class="card-icon">
+                        🧠
+                    </div>
+
+                    <h3>
+                        Le quiz
+                    </h3>
+
+                    <p>
+                        Testez vos connaissances grâce à notre
+                        quiz interactif sur les réseaux sociaux.
+                    </p>
+
+                    <a href="quiz.html">
+                        Commencer le quiz →
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= MESSAGE ================= -->
+
+        <section class="message">
+
+            <div>
+
+                <p>
+                    « Avant de partager, publier ou commenter,
+                    prends quelques secondes pour réfléchir. »
+                </p>
+
+                <span>
+                    — SocialJeunes
+                </span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <h2>
+                Social<span>Jeunes</span>
+            </h2>
+
+            <p>
+                Sensibiliser les jeunes pour un usage
+                responsable des réseaux sociaux.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="index.html">Accueil</a>
+            <a href="conseils.html">Conseils</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="ressources.html">Ressources</a>
+
+        </div>
+
+
+        <div class="copyright">
+
+            <p>
+                © 2026 SocialJeunes — Projet éducatif
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

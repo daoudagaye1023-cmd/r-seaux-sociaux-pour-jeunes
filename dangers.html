@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Les dangers | SocialJeunes</title>
+    <style>
+        /* ================================
+   PAGE DANGERS
+================================ */
+
+.danger-title {
+    padding: 100px 7%;
+
+    text-align: center;
+
+    background-color: #fff1f1;
+}
+
+
+.danger-title p:first-child {
+    color: #e74c3c;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+
+.danger-title h2 {
+    font-size: 50px;
+
+    margin-bottom: 20px;
+
+    color: #17202a;
+}
+
+
+.danger-title p:last-child {
+    max-width: 750px;
+
+    margin: auto;
+
+    color: #5f6b76;
+
+    font-size: 17px;
+}
+
+
+/* ================================
+   CARTES DANGERS
+================================ */
+
+.dangers {
+    padding: 100px 7%;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+    background-color: #f5f7fa;
+}
+
+
+.danger-card {
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    border-top: 4px solid #e74c3c;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+
+    transition: 0.3s;
+}
+
+
+.danger-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.10);
+}
+
+
+.danger-icon {
+    font-size: 45px;
+
+    margin-bottom: 20px;
+}
+
+
+.danger-card h3 {
+    font-size: 23px;
+
+    margin-bottom: 15px;
+}
+
+
+.danger-card p {
+    color: #687581;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+
+/* ================================
+   CONSEIL DANS LES CARTES
+================================ */
+
+.danger-tip {
+    background-color: #fff5f5;
+
+    border-radius: 8px;
+
+    padding: 15px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+
+.danger-tip strong {
+    color: #e74c3c;
+
+    font-size: 14px;
+}
+
+
+.danger-tip span {
+    color: #5f6b76;
+
+    font-size: 14px;
+}
+
+
+/* ================================
+   MESSAGE DANGER
+================================ */
+
+.danger-message {
+    padding: 100px 7%;
+
+    background-color: #17202a;
+
+    color: white;
+
+    text-align: center;
+}
+
+
+.danger-message div {
+    max-width: 800px;
+
+    margin: auto;
+}
+
+
+.danger-message h2 {
+    font-size: 40px;
+
+    margin-bottom: 20px;
+}
+
+
+.danger-message p {
+    color: #c4ccd4;
+
+    font-size: 17px;
+
+    margin-bottom: 30px;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 1000px) {
+
+    .dangers {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .danger-title h2 {
+        font-size: 38px;
+    }
+
+    .dangers {
+        grid-template-columns: 1fr;
+    }
+
+    .danger-message h2 {
+        font-size: 30px;
+    }
+
+}
+    </style>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+
+            <h1>
+                Social<span>Jeunes</span>
+            </h1>
+
+        </div>
+
+
+        <nav>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">Accueil</a>
+                </li>
+
+                <li>
+                    <a href="avantages.html">Avantages</a>
+                </li>
+
+                <li>
+                    <a href="dangers.html">Dangers</a>
+                </li>
+
+                <li>
+                    <a href="conseils.html">Conseils</a>
+                </li>
+
+                <li>
+                    <a href="quiz.html">Quiz</a>
+                </li>
+
+                <li>
+                    <a href="ressources.html">Ressources</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= CONTENU ================= -->
+
+    <main>
+
+
+        <!-- TITRE -->
+
+        <section class="danger-title">
+
+            <p>
+                RESTER VIGILANT
+            </p>
+
+            <h2>
+                Les dangers des réseaux sociaux
+            </h2>
+
+            <p>
+                Les réseaux sociaux offrent de nombreuses possibilités,
+                mais leur utilisation peut également présenter des risques.
+                Apprendre à les reconnaître permet de mieux se protéger.
+            </p>
+
+        </section>
+
+
+        <!-- ================= DANGERS ================= -->
+
+        <section class="dangers">
+
+
+            <!-- Cyberharcèlement -->
+
+            <article class="danger-card">
+
+                <div class="danger-icon">
+                    🚨
+                </div>
+
+                <h3>
+                    Cyberharcèlement
+                </h3>
+
+                <p>
+                    Le cyberharcèlement consiste à utiliser les outils
+                    numériques pour humilier, menacer, insulter ou
+                    harceler une personne.
+                </p>
+
+                <div class="danger-tip">
+
+                    <strong>
+                        À retenir :
+                    </strong>
+
+                    <span>
+                        Ne participe pas au harcèlement et signale
+                        les comportements abusifs.
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- Addiction -->
+
+            <article class="danger-card">
+
+                <div class="danger-icon">
+                    📱
+                </div>
+
+                <h3>
+                    Utilisation excessive
+                </h3>
+
+                <p>
+                    Passer trop de temps sur les réseaux sociaux peut
+                    prendre une place importante dans la journée et
+                    réduire le temps consacré aux études, au repos
+                    ou aux relations réelles.
+                </p>
+
+                <div class="danger-tip">
+
+                    <strong>
+                        À retenir :
+                    </strong>
+
+                    <span>
+                        Fixe des limites et fais régulièrement
+                        des pauses.
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- Désinformation -->
+
+            <article class="danger-card">
+
+                <div class="danger-icon">
+                    📰
+                </div>
+
+                <h3>
+                    Désinformation
+                </h3>
+
+                <p>
+                    Certaines informations publiées sur Internet
+                    peuvent être fausses, incomplètes ou sorties
+                    de leur contexte.
+                </p>
+
+                <div class="danger-tip">
+
+                    <strong>
+                        À retenir :
+                    </strong>
+
+                    <span>
+                        Vérifie toujours la source avant de partager
+                        une information.
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- Vie privée -->
+
+            <article class="danger-card">
+
+                <div class="danger-icon">
+                    🔐
+                </div>
+
+                <h3>
+                    Vie privée
+                </h3>
+
+                <p>
+                    Publier son adresse, son numéro de téléphone,
+                    ses documents personnels ou trop d'informations
+                    privées peut présenter des risques.
+                </p>
+
+                <div class="danger-tip">
+
+                    <strong>
+                        À retenir :
+                    </strong>
+
+                    <span>
+                        Réfléchis avant de publier des informations
+                        personnelles.
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- Arnaques -->
+
+            <article class="danger-card">
+
+                <div class="danger-icon">
+                    💳
+                </div>
+
+                <h3>
+                    Arnaques en ligne
+                </h3>
+
+                <p>
+                    Des personnes mal intentionnées peuvent utiliser
+                    de faux profils, de faux concours ou de faux liens
+                    pour essayer de récupérer des informations.
+                </p>
+
+                <div class="danger-tip">
+
+                    <strong>
+                        À retenir :
+                    </strong>
+
+                    <span>
+                        Méfie-toi des offres trop belles pour être vraies.
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- Image de soi -->
+
+            <article class="danger-card">
+
+                <div class="danger-icon">
+                    🪞
+                </div>
+
+                <h3>
+                    Comparaison sociale
+                </h3>
+
+                <p>
+                    Les contenus publiés sur les réseaux sociaux
+                    montrent souvent une partie sélectionnée de
+                    la vie des personnes. Se comparer constamment
+                    aux autres peut créer une perception irréaliste.
+                </p>
+
+                <div class="danger-tip">
+
+                    <strong>
+                        À retenir :
+                    </strong>
+
+                    <span>
+                        Souviens-toi qu'une publication ne montre
+                        pas toute la réalité.
+                    </span>
+
+                </div>
+
+            </article>
+
+
+        </section>
+
+
+        <!-- ================= MESSAGE ================= -->
+
+        <section class="danger-message">
+
+            <div>
+
+                <h2>
+                    Avant de cliquer, réfléchis.
+                </h2>
+
+                <p>
+                    Avant de publier, partager ou répondre,
+                    prends quelques secondes pour vérifier
+                    l'information et réfléchir aux conséquences.
+                </p>
+
+                <a href="conseils.html" class="btn">
+                    Découvrir les conseils
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <h2>
+                Social<span>Jeunes</span>
+            </h2>
+
+            <p>
+                Sensibiliser les jeunes pour un usage
+                responsable des réseaux sociaux.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="index.html">
+                Accueil
+            </a>
+
+            <a href="avantages.html">
+                Avantages
+            </a>
+
+            <a href="conseils.html">
+                Conseils
+            </a>
+
+            <a href="quiz.html">
+                Quiz
+            </a>
+
+            <a href="ressources.html">
+                Ressources
+            </a>
+
+        </div>
+
+
+        <div class="copyright">
+
+            <p>
+                © 2026 SocialJeunes — Projet éducatif
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

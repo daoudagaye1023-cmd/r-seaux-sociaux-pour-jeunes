@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ressources - SocialJeunes</title>
+    <style>
+        /* ============================= */
+/* PAGE RESSOURCES */
+/* ============================= */
+
+.resources-section {
+    padding: 70px 8%;
+    background-color: #f7f9fc;
+}
+
+.resources-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.resources-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.resource-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.resource-card:hover {
+    transform: translateY(-6px);
+}
+
+.resource-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.resource-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.resource-card p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.resource-card ul {
+    padding-left: 20px;
+}
+
+.resource-card li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+
+/* ============================= */
+/* CHECKLIST */
+/* ============================= */
+
+.checklist-section {
+    padding: 70px 8%;
+    text-align: center;
+    background-color: white;
+}
+
+.checklist-section h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.checklist-section > p {
+    margin-bottom: 35px;
+    color: #555;
+}
+
+.checklist {
+    max-width: 700px;
+    margin: auto;
+    text-align: left;
+}
+
+.checklist label {
+    display: block;
+    background-color: #f7f9fc;
+    padding: 18px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.checklist label:hover {
+    background-color: #eef2f7;
+}
+
+.checklist input {
+    margin-right: 12px;
+    transform: scale(1.2);
+}
+
+
+/* ============================= */
+/* MESSAGE FINAL */
+/* ============================= */
+
+.resource-message {
+    padding: 70px 8%;
+    text-align: center;
+    background-color: #eef4ff;
+}
+
+.resource-message h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.resource-message p {
+    max-width: 750px;
+    margin: 0 auto 30px;
+    line-height: 1.8;
+    color: #555;
+}
+
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 900px) {
+
+    .resources-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .resources-section {
+        padding: 50px 5%;
+    }
+
+    .resources-container {
+        grid-template-columns: 1fr;
+    }
+
+    .resource-card {
+        padding: 25px;
+    }
+
+    .checklist-section {
+        padding: 50px 5%;
+    }
+
+}
+    </style>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <a href="index.html">SocialJeunes</a>
+        </div>
+
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="avantages.html">Avantages</a>
+            <a href="dangers.html">Dangers</a>
+            <a href="conseils.html">Conseils</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="ressources.html">Ressources</a>
+        </nav>
+    </header>
+
+
+    <!-- INTRODUCTION -->
+    <section class="page-intro">
+        <h1>RESSOURCES UTILES</h1>
+
+        <p>
+            Des outils et des informations pour apprendre à utiliser
+            les réseaux sociaux de manière plus sûre et responsable.
+        </p>
+    </section>
+
+
+    <!-- RESSOURCES -->
+    <section class="resources-section">
+
+        <h2>Nos ressources</h2>
+
+        <div class="resources-container">
+
+            <!-- Ressource 1 -->
+            <div class="resource-card">
+
+                <div class="resource-icon">🔐</div>
+
+                <h3>Sécurité du compte</h3>
+
+                <p>
+                    Apprends à mieux protéger tes comptes contre
+                    les piratages et les accès non autorisés.
+                </p>
+
+                <ul>
+                    <li>Utilise un mot de passe solide</li>
+                    <li>Active la double authentification</li>
+                    <li>Ne partage jamais ton mot de passe</li>
+                    <li>Évite d'utiliser le même mot de passe partout</li>
+                </ul>
+
+            </div>
+
+
+            <!-- Ressource 2 -->
+            <div class="resource-card">
+
+                <div class="resource-icon">🛡️</div>
+
+                <h3>Protection de la vie privée</h3>
+
+                <p>
+                    Quelques réflexes simples peuvent éviter que
+                    tes informations personnelles soient utilisées
+                    contre toi.
+                </p>
+
+                <ul>
+                    <li>Vérifie les paramètres de confidentialité</li>
+                    <li>Limite les informations publiques</li>
+                    <li>Évite de publier ta localisation précise</li>
+                    <li>Réfléchis avant de publier une photo</li>
+                </ul>
+
+            </div>
+
+
+            <!-- Ressource 3 -->
+            <div class="resource-card">
+
+                <div class="resource-icon">🚨</div>
+
+                <h3>Cyberharcèlement</h3>
+
+                <p>
+                    Si quelqu'un t'insulte, te menace ou te harcèle
+                    en ligne, tu n'as pas à gérer la situation seul.
+                </p>
+
+                <ul>
+                    <li>Ne réponds pas aux provocations</li>
+                    <li>Conserve les preuves</li>
+                    <li>Bloque le compte concerné</li>
+                    <li>Signale le contenu</li>
+                    <li>Parle à une personne de confiance</li>
+                </ul>
+
+            </div>
+
+
+            <!-- Ressource 4 -->
+            <div class="resource-card">
+
+                <div class="resource-icon">🔎</div>
+
+                <h3>Vérifier une information</h3>
+
+                <p>
+                    Une information très partagée n'est pas forcément
+                    une information vraie.
+                </p>
+
+                <ul>
+                    <li>Regarde qui a publié l'information</li>
+                    <li>Vérifie la date</li>
+                    <li>Cherche la source originale</li>
+                    <li>Compare avec d'autres sources fiables</li>
+                    <li>Méfie-toi des titres très sensationnels</li>
+                </ul>
+
+            </div>
+
+
+            <!-- Ressource 5 -->
+            <div class="resource-card">
+
+                <div class="resource-icon">💰</div>
+
+                <h3>Éviter les arnaques</h3>
+
+                <p>
+                    Certaines personnes utilisent les réseaux sociaux
+                    pour essayer de récupérer ton argent ou tes données.
+                </p>
+
+                <ul>
+                    <li>Méfie-toi des offres trop belles</li>
+                    <li>Ne donne jamais tes codes de sécurité</li>
+                    <li>Ne transfère pas d'argent à un inconnu</li>
+                    <li>Vérifie l'identité d'une personne ou d'une entreprise</li>
+                </ul>
+
+            </div>
+
+
+            <!-- Ressource 6 -->
+            <div class="resource-card">
+
+                <div class="resource-icon">🧠</div>
+
+                <h3>Bien-être numérique</h3>
+
+                <p>
+                    Les réseaux sociaux doivent rester un outil,
+                    et non prendre toute la place dans ta vie.
+                </p>
+
+                <ul>
+                    <li>Fais régulièrement des pauses</li>
+                    <li>Évite le téléphone pendant les études</li>
+                    <li>Garde du temps pour tes proches</li>
+                    <li>Dors sans garder ton téléphone près de toi</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CHECKLIST -->
+    <section class="checklist-section">
+
+        <h2>✅ Ma checklist de sécurité</h2>
+
+        <p>
+            Vérifie régulièrement si tu appliques ces bonnes pratiques :
+        </p>
+
+        <div class="checklist">
+
+            <label>
+                <input type="checkbox">
+                Mon mot de passe est suffisamment sécurisé.
+            </label>
+
+            <label>
+                <input type="checkbox">
+                J'ai activé la double authentification.
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Mes informations personnelles sont protégées.
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Je vérifie les informations avant de les partager.
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Je sais comment bloquer et signaler un compte.
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Je prends régulièrement des pauses des réseaux sociaux.
+            </label>
+
+        </div>
+
+    </section>
+
+
+    <!-- MESSAGE -->
+    <section class="resource-message">
+
+        <h2>Tu n'as pas besoin d'être parfait</h2>
+
+        <p>
+            L'objectif n'est pas d'arrêter complètement les réseaux sociaux.
+            L'objectif est d'apprendre à les utiliser intelligemment,
+            à protéger tes informations et à garder le contrôle de ton temps.
+        </p>
+
+        <a href="quiz.html" class="btn">
+            Tester mes connaissances
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 SocialJeunes — Pour un usage conscient et responsable
+            des réseaux sociaux.
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
